@@ -1,6 +1,6 @@
 # **Breast Cancer Diagnosis Using Wisconsin Dataset | Logistic Regression**  
 
-![](cancer_cover.jpg)
+![](cancer_cover_1.jpg)
 
 ## **Introduction**  
 Breast cancer is one of the most common types of cancer worldwide. Early diagnosis is critical for effective treatment and patient survival. This project leverages **Logistic Regression**, a simple yet powerful classification algorithm, to predict whether a tumor is **benign (non-cancerous) or malignant (cancerous)** based on **biopsy sample features**.  
@@ -29,7 +29,7 @@ Given **biopsy-derived measurements** of breast tumors, the goal is to develop a
 - **Mean Radius, Mean Texture, Mean Perimeter, Mean Area, Mean Smoothness, etc.**  
 - **Worst and Standard Error values for these features.**  
 
-![](
+![](barchart_1.png)
 
 ---
 
@@ -86,6 +86,8 @@ X_test_scaled = scaler.transform(X_test)
 model = LogisticRegression()
 model.fit(X_train_scaled, y_train)
 ```
+
+![](confusion_matrix.png)
 
 ### **3. Model Evaluation**  
 - **Accuracy, Precision, Recall, F1-score, ROC-AUC** metrics.  
